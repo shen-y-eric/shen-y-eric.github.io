@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Piano</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Neuton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "header">
+        <div class="title-container">
+            <span class = "title">chromesthesia</span>
+        </div>
+        <div class = "description hidden">
+            <p id = "text">
+                Chromesthesia or sound-to-color synesthesia is a type of synesthesia in which sound involuntarily evokes an experience of color, shape, and movement.
+            </p>
+        
+            <p id ="text2">
+                Alexander Scriabin was a Russian composer and pianist who was widely regarded as a synesthete, but
+                there is controversy over whether he specifically had chromesthesia. Nonetheless, Scriabin created a
+                color organ and had a table for sound-to-color mapping. You can try it out with the piano below.
+            </p>
+        </div>
+    </div>
+    <div class = "piano-container">
+        <div class = "piano fade">
+            <div data-note="C" class="key white" onclick = "CPress()"></div>
+            <div data-note="Db" class="key black" onclick = "DbPress()"></div>
+            <div data-note="D" class="key white" onclick="DPress()"></div>
+            <div data-note="Eb" class="key black" onclick="EbPress()"></div>
+            <div data-note="E" class="key white" onclick="EPress()"></div>
+            <div data-note="F" class="key white" onclick="FPress()"></div>
+            <div data-note="Gb" class="key black" onclick="GbPress()"></div>
+            <div data-note="G" class="key white" onclick="GPress()"></div>
+            <div data-note="Ab" class="key black" onclick="AbPress()"></div>
+            <div data-note="A" class="key white" onclick="APress()"></div>
+            <div data-note="Bb" class="key black" onclick="BbPress()"></div>
+            <div data-note="B" class="key white" onclick="BPress()"></div>
+            <div data-note="C5" class="key white" onclick="CPress()"></div>
+        </div>   
+    </div>
+    <audio id="C" src="assets/audio/C.mp3"></audio>
+    <audio id="Db" src="assets/audio/Db.mp3"></audio>
+    <audio id="D" src="assets/audio/D.mp3"></audio>
+    <audio id="Eb" src="assets/audio/Eb.mp3"></audio>
+    <audio id="E" src="assets/audio/E.mp3"></audio>
+    <audio id="F" src="assets/audio/F.mp3"></audio>
+    <audio id="Gb" src="assets/audio/Gb.mp3"></audio>
+    <audio id="G" src="assets/audio/G.mp3"></audio>
+    <audio id="Ab" src="assets/audio/Ab.mp3"></audio>
+    <audio id="A" src="assets/audio/A.mp3"></audio>
+    <audio id="Bb" src="assets/audio/Bb.mp3"></audio>
+    <audio id="B" src="assets/audio/B.mp3"></audio>
+    <audio id="C5" src="assets/audio/C5.mp3"></audio>
+
+    <script src="assets/script/script.js"></script> 
+</body>
+</html>
